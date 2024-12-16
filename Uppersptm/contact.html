@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="RSD 5.0.3319" />
+    <title>contact</title>
+    <link rel="stylesheet" href="css/vanillacss.min.css" />
+    <link rel="stylesheet" href="css/wireframe-theme.min.css" />
+    <script>
+      document.createElement("picture");
+    </script>
+    <script class="picturefill" async="async" src="js/picturefill.min.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tenali+Ramakrishna" />
+    <style>
+      ::selection {
+        background-color: #13274a;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="container navbar" id="container-10">
+      <a href="index.html" class="responsive-picture picture-link-1">
+        <picture><img alt="Placeholder Picture" src="./imagesptm/Logo_ptm-removebg.png" /></picture>
+      </a>
+      <div class="container navigation-links">
+        <a class="glyph mobile-nav-button close-button-cross" href="#"><i class="coffeecup-icons-cross2"></i></a>
+        <div class="responsive-picture logo-menu-mobile">
+          <picture><img alt="Placeholder Picture" src="./imagesptm/Logo_ptm-removebg.png" /></picture>
+        </div>
+        <a class="link-text navlink" href="index.html">Inicio</a>
+        <a class="link-text navlink" href="explore.html">Servicios</a>
+        <a class="link-text navlink" href="admission.html">Proyectos</a>
+        <a class="link-text navlink" href="stories.html">Sobre nosotros</a>
+        <a class="link-text navlink" href="contact.html">contactenos</a>
+      </div>
+      <div class="html-element navigation-code">
+        <script>
+          document.addEventListener("DOMContentLoaded", function (event) {
+            $(".mobile-nav-button").click(function (e) {
+              $(".navigation-links").toggleClass("show-menu");
+              $("body").css("overflow", $(".navigation-links").hasClass("show-menu") ? "hidden" : "auto");
+            });
+          });
+        </script>
+      </div>
+      <a class="glyph mobile-nav-button" href="#!"><i class="coffeecup-icons-menu7"></i></a>
+    </nav>
+    <main class="container contact-hero-section">
+      <div class="container container-content-wrapper center-items">
+       <!-- <h6 class="tagline" id="tagline-hero-section">CONTaCTENOS</h6>-->
+        <h1 class="hero-heading"  id="heading-1">Envíenos <br><br> sus <br><br> <span class="heading-text-1">Consultas</span></h1>
+      </div>
+      <section class="container grid-section-3">
+        <div class="container sd-three-cols-2">
+          <div class="container contact-info-container-wrapper">
+            <h6 class="contact-minititle" >Dirección</h6>
+            <p class="paragraph contact-body-text">
+              FARMEX Villa Fontana<br />2C. Este,1/2 C. Norte.<br />Casa B-1<br />Managua,Nicaragua.
+            </p>
+          </div>
+          <div class="container contact-info-container-wrapper" id="container-2-1">
+            <h6 class="contact-minititle">Recepción</h6>
+            <p class="paragraph contact-body-text">
+              Mrs Lara White<br />Tel: +505 87876137<br />Email: info@uppers.com.ni
+            </p>
+          </div>
+          <div class="container contact-info-container-wrapper">
+            <h6 class="contact-minititle">Contacto</h6>
+            <p class="paragraph contact-body-text">Tel: +505 87876137<br />Email: info@uppers.com.ni</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section class="container form-section">
+      <div class="container container-form-father">
+        <h6 class="form-title">Detalles</h6>
+        <div class="rule form-rule">
+          <hr />
+        </div>
+        <form class="form-container form-container-big-wrapper">
+          <div class="container input-container-wrapper" id="container-6">
+            <label class="label form-label">Nombre</label><input value="" name="text-name" type="text" class="input-1" />
+          </div>
+          <div class="container input-container-wrapper" id="container-7">
+            <label class="label form-label">Telefono</label
+            ><input value="" name="phone-name" type="tel" class="phone-number-1" />
+          </div>
+          <div class="container input-container-wrapper" id="container-9">
+            <label class="label form-label">Email </label
+            ><input value="" name="email-name" type="email" class="email-1" />
+          </div>
+        </form>
+        <h6 class="form-title">Direccion (optional)</h6>
+        <div class="rule form-rule">
+          <hr />
+        </div>
+        <form action="insert_data.php" method="POST" class="form-container form-container-big-wrapper">
+          <div class="container input-container-wrapper" id="container-6-copy-1">
+            <label class="label form-label">Direccion 1</label
+            ><input value="" name="address_line_1" type="text" class="input-1" />
+          </div>
+          <div class="container input-container-wrapper" id="container-7-copy-1">
+            <label class="label form-label">Direccion 2</label
+            ><input value="" name="address_line_2" type="text" class="input-1" />
+          </div>
+          <div class="container input-container-wrapper" id="container-1">
+            <label class="label form-label">Ciudad</label><input value="" name="city" type="text" class="input-1" />
+          </div>
+          <div class="container input-container-wrapper" id="container-6-copy-2">
+            <label class="label form-label">Pais</label><input value="" name="country" type="text" class="input-1" />
+          </div>
+
+          <!--
+          <div class="container input-container-wrapper" id="container-7-copy-2">
+            <label class="label form-label">Country</label
+            ><input value="" name="postcode" type="text" class="input-1" />
+          </div>
+          -->
+          <div class="container input-container-wrapper" id="container-8">
+            <label class="label form-label">Codigo postal</label
+            ><input value="" name="postcode" type="text" class="input-1" />
+          </div>
+          <br /><br />
+
+          
+          <div class= "button-form container input-container-wrapper" id="btnsend" >
+            <button class="button-1">Enviar Datos</button>
+          </div>
+        </form> 
+        <h6 class="form-title">Tu problematica</h6>
+        <div class="rule form-rule">
+          <hr />
+        </div>
+        <div class="container text-area-container-wrapper" id="container-6-copy-3">
+          <label class="label form-label">Tu mensaje</label
+          ><textarea name="Write here" class="textarea-1">Describe tu problematica...</textarea>
+        </div>
+        <button type="button" class="button-1">Enviar&nbsp;tu&nbsp;mensaje</button>
+      </div>
+    </section>
+    <footer class="container footer-1">
+      <div class="container fotter-3-columns">
+        <div class="container description-logos-footer">
+          <h4 class="headline-footer">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Vel pretium lectus quam id leo in vitae. Felis imperdiet proin fermentum leo vel orci
+            porta non pulvinar.
+          </h4>
+          <p class="paragraph direction-footer" id="paragraph-3">Valencia 190<br />08011 Barcelona</p>
+          <div class="container container-telephone-footer">
+            <span class="glyph icon-footer"><i class="coffeecup-icons-phone2"></i></span>
+            <a class="link-text nav-link-footer" href="#">Tel: +34 934 44 5588</a>
+          </div>
+          <a class="link-text nav-link-footer" href="#">info@yourbrand.com</a>
+          <footer class="container social-footer-wrapper" lang="aa">
+            <a href="#" target="_blank" class="social-image social-icon-1"
+              ><img class="twitter-icon" src="./socialicons/webicon-twitter.png" alt="Social Icon" /></a
+            ><a href="#" target="_blank" class="social-image social-icon-1"
+              ><img class="instagram-icon" src="./socialicons/webicon-instagram.png" alt="Social Icon" /></a
+            ><a href="#" target="_blank" class="social-image social-icon-1"
+              ><img class="pinterest-icon" src="./socialicons/webicon-pinterest.png" alt="Social Icon" /></a
+            ><a href="#" target="_blank" class="social-image social-icon-1"
+              ><img class="youtube-icon" src="./socialicons/webicon-youtube.png" alt="Social Icon"
+            /></a>
+          </footer>
+        </div>
+        <div class="container container-links-footer-wrapper-1">
+          <a class="link-text navlink" href="index.html">Inicio</a>
+          <a class="link-text navlink" href="explore.html">Servicios</a>
+          <a class="link-text navlink" href="admission.html">Proyectos</a>
+          <a class="link-text navlink" href="stories.html">Sobre nosotros</a>
+          <a class="link-text navlink" href="contact.html">contactenos</a>
+        </div>
+        <div class="container container-form-content-wrapper">
+          <form class="form-container form-footer-container">
+            <h5 class="heading-1">Escribenos para </h5>
+            <div class="container container-form-content-wrapper-1">
+              <label class="label label-form">Email</label
+              ><input value="" name="email-name" type="email" class="email-input-full" />
+            </div>
+            <button type="button" class="button-form">Action</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/outofview.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"][data-scroll]', {
+        speed: 750
+      });
+    </script>
+  </body>
+</html>
