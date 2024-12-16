@@ -1,3 +1,11 @@
+/*Estilo css para ajusta imagen css*/
+.carousel-item img {
+  width: 100%;
+  height: 400px; /* Ajusta la altura deseada */
+  object-fit: cover;
+}
+
+
 /* Text Elements */
 /*esta clase afecta al texto de header , se modifico con arial con motivos de prueba de ortografia referente a los*/
 h1.hero-heading {

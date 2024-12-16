@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Materialize Carrusel</title>
+  <link rel="stylesheet" href="vanilla.min.css">
+  <link rel="stylesheet" href="vanilla.css">
+  <link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css">
+  <style>
+    /* Opcional: Personaliza el tamaño del carrusel */
+    .carousel-item img {
+      width: 100%;
+      height: 400px; /* Ajusta la altura deseada */
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+    <main class="container"></main>
+  <!-- Carrusel -->
+  <div class="carousel">
+    <a class="carousel-item" href="#one"><img src="imagesptm/favicon-uppers-sa-01.png" alt="Image 1"></a>
+    <a class="carousel-item" href="#two"><img src="imagesptm/Logo_ptm-removebg.png" alt="Image 2"></a>
+    <a class="carousel-item" href="#three"><img src="imagesptm/favicon-uppers-sa-01.png" alt="Image 3"></a>
+    <a class="carousel-item" href="#four"><img src="imagesptm/Logo_ptm-removebg.png" alt="Image 4"></a>
+    <a class="carousel-item" href="#five"><img src="imagesptm/favicon-uppers-sa-01.png" alt="Image 5"></a>
+  </div>
+  
+  <!-- Botones -->
+  <button id="prevButton">Anterior</button>
+  <button id="nextButton">Siguiente</button>
+
+  <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.carousel');
+      var options = { duration: 200, indicators: true };
+      var instances = M.Carousel.init(elems, options);
+
+      var instance = instances[0];
+      document.getElementById('nextButton').addEventListener('click', function () {
+        instance.next();
+      });
+      document.getElementById('prevButton').addEventListener('click', function () {
+        instance.prev();
+      });
+    });
+  </script>
+</body>
+</html>

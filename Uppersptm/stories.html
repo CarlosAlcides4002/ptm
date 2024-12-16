@@ -2,17 +2,27 @@
 <html>
 
 <head>
+  
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="generator" content="RSD 5.0.3319">
   <title>stories</title>
+  <!--<link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css">-->
+<!--<link rel="stylesheet" href="css/custom-styles.css">-->
   <link rel="stylesheet" href="css/vanillacss.min.css">
   <link rel="stylesheet" href="css/wireframe-theme.min.css">
   <script>document.createElement( "picture" );</script>
   <script class="picturefill" async="async" src="js/picturefill.min.js"></script>
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tenali+Ramakrishna">
-<style>::selection { background-color: #13274a; color: white }</style>
+<style>::selection { background-color: #13274a; color: white } 
+   /* Opcional: Personaliza el tamaño del carrusel */
+   .carousel-item img {
+      width: 100%;
+      height: 400px; /* Ajusta la altura deseada */
+      object-fit: cover;
+    }
+</style>
 
 </head>
 
@@ -62,6 +72,38 @@ document.addEventListener("DOMContentLoaded", function(event) {
     </div>
     <div class="container image-request"></div>
   </main>
+  <div class="c">
+    <div class="carousel.js">
+      <a class="carousel-item" href="#one"><img src="imagesptm/favicon-uppers-sa-01.png" alt="Image 1"></a>
+      <a class="carousel-item" href="#two"><img src="imagesptm/Logo_ptm-removebg.png" alt="Image 2"></a>
+      <a class="carousel-item" href="#three"><img src="imagesptm/favicon-uppers-sa-01.png" alt="Image 3"></a>
+      <a class="carousel-item" href="#four"><img src="imagesptm/Logo_ptm-removebg.png" alt="Image 4"></a>
+      <a class="carousel-item" href="#five"><img src="imagesptm/favicon-uppers-sa-01.png" alt="Image 5"></a>
+      <!--Botones-->
+      <button id="nextButton">Siguiente</button>
+      <button id="prevButton">Anterior</button>
+
+      <!--script-->
+      <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.carousel');
+      var options = { duration: 200, indicators: true };
+      var instances = M.Carousel.init(elems, options);
+
+      var instance = instances[0];
+      document.getElementById('nextButton').addEventListener('click', function () {
+        instance.next();
+      });
+      document.getElementById('prevButton').addEventListener('click', function () {
+        instance.prev();
+      });
+    });
+  </script>
+  
+    </div>
+  </div>
+  
   <footer class="container footer-1">
     <div class="container fotter-3-columns">
       <div class="container description-logos-footer">
@@ -85,15 +127,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
           <h5 class="heading-1">Join or newsletter</h5>
           <div class="container container-form-content-wrapper-1"><label class="label label-form">Email Address</label><input value="" name="email-name" type="email" class="email-input-full"></div><button type="button" class="button-form">Action</button>
         </form>
-        <div class="carousel">
-          <a class="carousel-item" href="#one"><img src="imagesptm/favicon-uppers-sa-01.png" alt="Image 1"></a>
-          <a class="carousel-item" href="#two"><img src="imagesptm/Logo_ptm-removebg.png" alt="Image 2"></a>
-          <a class="carousel-item" href="#three"><img src="imagesptm/favicon-uppers-sa-01.png" alt="Image 3"></a>
-          <button id="nextButton">Siguiente</button>
-          <button id="prevButton">Anterior</button>
-
-        </div>
-        
       </div>
     </div>
   </footer>
@@ -106,6 +139,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	speed: 750
   });
 </script>
+
 </body>
 
 </html>
