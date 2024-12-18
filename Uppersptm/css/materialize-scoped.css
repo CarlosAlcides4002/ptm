@@ -1,0 +1,67 @@
+/* Grillas */
+.row {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.row .col {
+    float: left;
+    box-sizing: border-box;
+    padding: 0 .75rem;
+    min-height: 1px;
+}
+.col.s12 {
+    width: 100%;
+}
+.col.s6 {
+    width: 50%;
+}
+.col.m3 {
+    width: 25%;
+}
+
+/* Tarjetas (Cards) */
+.card {
+    position: relative;
+    margin: 0.5rem 0 1rem 0;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+.card.small {
+    height: 300px;
+}
+.card .card-image {
+    position: relative;
+    overflow: hidden;
+}
+.card .card-image img {
+    display: block;
+    border-radius: 2px 2px 0 0;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+.card .card-title {
+    font-size: 24px;
+    font-weight: 300;
+    color: #fff;
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    z-index: 1;
+    margin: 0;
+}
+.card .card-content {
+    padding: 24px;
+    border-radius: 0 0 2px 2px;
+}
