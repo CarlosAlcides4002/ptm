@@ -160,7 +160,7 @@ h4.headline-footer {
   text-align: left;
   font-weight: 500;
   font-size: 26px;
-  font-family: 'Tenali Ramakrishna', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Arial,Tenali Ramakrishna', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   line-height: 1;
 }
 
@@ -169,7 +169,7 @@ h5.heading-1 {
   color: #fffffb;
   font-weight: 500;
   font-size: 26px;
-  font-family: 'Tenali Ramakrishna', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Arial,Tenali Ramakrishna', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 h6.tagline {
@@ -180,7 +180,7 @@ h6.tagline {
   letter-spacing: 2px;
   font-weight: 400;
   font-size: 30px;
-  font-family: 'Tenali Ramakrishna', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Arial,Tenali Ramakrishna', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 h6.tagline.white {
