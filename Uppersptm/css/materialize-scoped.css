@@ -1,3 +1,5 @@
+
+/* Esta clase dse creo con el motivo de usar scoped ya que existe un conflicto css , se emplea solo el css de las cards */
 /* Grillas */
 .row {
     margin-left: auto;
@@ -37,6 +39,13 @@
 .card.small {
     height: 300px;
 }
+/*se empleo esta clase con el motivo de estadarizar las imagenes*/
+.card-image {
+    width: 100%; /* Make the image responsive */
+    height: 200px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Cover the entire area of the card */
+    border-radius: 5px; /* Optional: Add some border radius */
+}
 .card .card-image {
     position: relative;
     overflow: hidden;
@@ -52,12 +61,13 @@
     width: 100%;
 }
 .card .card-title {
-    font-size: 24px;
+    font-family: sans-serif;
+    font-size: 22px;
     font-weight: 300;
-    color: #fff;
+    color: #13274a;
     position: absolute;
-    bottom: 16px;
-    left: 16px;
+    top: 200px;
+    left:10px;
     z-index: 1;
     margin: 0;
 }
