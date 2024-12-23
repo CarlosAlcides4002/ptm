@@ -75,3 +75,20 @@
     padding: 24px;
     border-radius: 0 0 2px 2px;
 }
+
+/* Efecto de zoom en la card */
+.card:hover {
+    transform: scale(1.05); /* Incrementa el tamaño */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+  }
+  .carousel {
+    overflow: hidden;
+    position: relative;
+  }
+  .carousel .carousel-item {
+    width: 100%; /* Ajusta al ancho que quieras mostrar */
+    display: block;
+    margin: 0 auto;
+  }
+  
