@@ -153,15 +153,17 @@ h4.mini-title {
 }
 
 h4.headline-footer {
+  left: 300px;
   margin-top: 0;
   margin-bottom: 0;
   max-width: none;
   color: #fffffb;
   text-align: left;
   font-weight: 500;
-  font-size: 26px;
+  font-size: 24px;
   font-family: 'Arial,Tenali Ramakrishna', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   line-height: 1;
+  font-style: italic;
 }
 
 h5.heading-1 {
@@ -251,7 +253,7 @@ p.paragraph.direction-footer {
   color: #fafaf3;
   text-align: right;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 25px;
   font-family: 'Tenali Ramakrishna', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   line-height: 25px;
 }
@@ -327,12 +329,13 @@ blockquote.blockquote-1 {
 }
 
 a.link-text.navlink {
-  padding: 4px 40px;
+   left: 20px;
+  padding: 10px 0px;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 22px;
+  font-size: 18px;
   font-family: 'Arial,Tenali Ramakrishna', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   -webkit-transition-timing-function: ease-in-out;
      -moz-transition-timing-function: ease-in-out;
@@ -366,8 +369,9 @@ a.link-text.nav-link-footer {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 18px;
-  font-family: 'Tenali Ramakrishna', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  font-family: 'Arial,Tenali Ramakrishna', 'Helvetica Neue', Helvetica,sans-serif;
+  font-style: italic;
 }
 
 a.link-text.navlink:hover {
