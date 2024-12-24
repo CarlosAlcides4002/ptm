@@ -24,7 +24,13 @@
         <picture><img alt="Placeholder Picture" src="./imagesptm/Logo_ptm-removebg.png"></picture>
       </div>
       <a class="link-text navlink" href="index.html">Inicio</a>
-      <a class="link-text navlink" href="explore.html">Servicios</a>
+      <a class="link-text navlink dropdown-trigger" href="#!" data-target="dropdown1">
+        Servicios<i class="material-icons right">arrow_drop_down</i>
+    </a><ul id="dropdown1" class="dropdown-content">
+      <li><a href="servicio1.html">Servicio 1</a></li>
+      <li><a href="servicio2.html">Servicio 2</a></li>
+      <li><a href="servicio3.html">Servicio 3</a></li>
+  </ul>
       <a class="link-text navlink" href="admission.html">Proyectos</a>
       <a class="link-text navlink" href="stories.html">Sobre nosotros</a>
       <a class="link-text navlink" href="contact.html">contactenos</a>
@@ -36,7 +42,21 @@ document.addEventListener("DOMContentLoaded", function(event) {
       $('body').css('overflow', $('.navigation-links').hasClass('show-menu') ? 'hidden' : 'auto');
   });
 });
-</script></div><a class="glyph mobile-nav-button" href="#!"><i class="coffeecup-icons-menu7"></i></a>
+
+
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const elems = document.querySelectorAll('.dropdown-trigger');
+    M.Dropdown.init(elems, {
+      constrainWidth: false,
+      coverTrigger: false
+    });
+  });
+</script>
+</div><a class="glyph mobile-nav-button" href="#!"><i class="coffeecup-icons-menu7"></i></a>
   </nav>
 <main class="container hero-section-explore">
     <!--<div class="container container-content-wrapper center-items hero-section-explore">

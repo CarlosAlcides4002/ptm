@@ -91,4 +91,20 @@
     display: block;
     margin: 0 auto;
   }
+
+  /* Dropdown  , se agregro para apreciar los servicios de manera dierecta*/
+  .dropdown-content {
+    background-color: #fff; /* Background color */
+    border-radius: 4px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.dropdown-content li a {
+    color: #000; /* Text color */
+    padding: 10px 15px; /* Padding */
+}
+
+.dropdown-content li a:hover {
+    background-color: #f0f0f0; /* Hover effect */
+}
   

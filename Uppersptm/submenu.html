@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="generator" content="RSD 5.0.3319">
+  <title>Explore</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/vanillacss.min.css">
+  <link rel="stylesheet" href="css/wireframe-theme.min.css">
+  <script>document.createElement( "picture" );</script>
+  <script class="picturefill" async="async" src="js/picturefill.min.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/materialize-scoped.css">
+  <style>
+    ::selection { background-color: #13274a; color: rgb(233, 56, 56); }
+  </style>
+</head>
+
+<body>
+  <nav class="container kernning-navbar">
+    <a href="index.html" class="responsive-picture picture-link-1">
+      <picture><img alt="Logo" src="./imagesptm/Logo_ptm-removebg.png"></picture>
+    </a>
+    <div class="container navigation-links materialize-scoped">
+      <a class="glyph mobile-nav-button close-button-cross" href="#"><i class="coffeecup-icons-cross2"></i></a>
+      <div class="responsive-picture logo-menu-mobile">
+        <picture><img alt="Logo" src="./imagesptm/Logo_ptm-removebg.png"></picture>
+      </div>
+      <a class="link-text navlink" href="index.html">Inicio</a>
+      <a class="link-text navlink dropdown-trigger" href="#!" data-target="dropdown1">
+        Servicios<i class="material-icons right">arrow_drop_down</i>
+      </a>
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="servicio1.html">Servicio 1</a></li>
+        <li><a href="servicio2.html">Servicio 2</a></li>
+        <li><a href="servicio3.html">Servicio 3</a></li>
+      </ul>
+      <a class="link-text navlink" href="admission.html">Proyectos</a>
+      <a class="link-text navlink" href="stories.html">Sobre nosotros</a>
+      <a class="link-text navlink" href="contact.html">Contáctenos</a>
+    </div>
+  </nav>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const elems = document.querySelectorAll('.dropdown-trigger');
+      M.Dropdown.init(elems, {
+        constrainWidth: false,
+        coverTrigger: false
+      });
+    });
+  </script>
+</body>
+
+</html>
